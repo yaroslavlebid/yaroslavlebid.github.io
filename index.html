@@ -5,15 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>myHome Application</title>
+
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slider-review.css">
 </head>
 
 <body>
-    <script language="javascript" src="script.js"></script>
+
     <header>
         <dir class="logo"><a href="#header">myHome</a></dir>
         <nav>
@@ -76,16 +78,37 @@
         </section>
 
         <section id="screens">
-            <!-- Screenshots -->
+            <h1>See examples</h1>
+            <h2>screenshots</h2>
         </section>
 
         <section id="reviews">
-            <!-- Reviews -->
+            <h1>Reviews</h1>
+            <h2>what users think</h2>
+
+            <div class="cd-testimonials-wrapper">
+                <ul class="cd-testimonials">
+                    <li>
+                        <img src="img/avatar-1.svg" width="140" alt="Author image">
+                        <p>I think this app is perfect for all people who are at least traveling beyond their city. It is very convenient in that you can book both a hotel and a room in an apartment.</p>
+                        <p class="author">Yaroslav Lebid</p>
+                    </li>
+
+                    <li>
+                        <img src="img/avatar-2.jpg" alt="Author image">
+                        <p>I think this app is perfect for all people who are at least traveling beyond their city. It is very convenient in that you can book both a hotel and a room in an apartment.I think this app is perfect for all people who are at least traveling beyond their city. It is very convenient in that you can book both a hotel and a room in an apartment.I think this app is perfect for all people who are at least traveling beyond their city. It is very convenient in that you can book both a hotel and a room in an apartment.</p>
+                        <p class="author">Klava Koka</p>
+                    </li>
+                </ul>
+            </div>
         </section>
 
-        <section id="download-last">
-            <!-- Download link in page foot -->
-        </section>
+    </main>
+    </section>
+
+    <section id="download-last">
+        <!-- Download link in page foot -->
+    </section>
     </main>
 
     <footer>
@@ -93,6 +116,10 @@
 
         <!-- links -->
     </footer>
+
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/jquery.flexslider-min.js"></script>
+    <script src="js/review-slider.js"></script>
 </body>
 
 </html>
