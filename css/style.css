@@ -268,6 +268,17 @@ main h2 {
     margin-top: 185px;
 }
 
+.mobile
+{
+    width: 257px;
+    height: 349px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000,
+}
+
 #reviews {
     margin-top: 185px;
 }
