@@ -17,8 +17,8 @@
 
 <body>
 
-    <header>
-        <dir class="logo"><a href="#header">myHome</a></dir>
+    <header id="header">
+        <div class="logo"><a href="#header">myHome</a></div>
         <nav>
             <ul class="horizontal">
                 <li><a href="#about">About</a></li>
@@ -144,18 +144,46 @@
             </div>
         </section>
 
-    </main>
-    </section>
+        <section id="download-last">
+            <h1>Download now</h1>
+            <h2>myHome application</h2>
 
-    <section id="download-last">
-        <!-- Download link in page foot -->
-    </section>
+            <div class="content">
+                <form>
+                    <button type="button" class="android" onClick='location.href="http://google.com";'>
+                        <img src="img/Androidwhite.svg" width="35px">
+                        <p>Google Play</p>
+                    </button>
+                    <button type="button" class="apple" onClick="location.href=' http://apple.com';">
+                        <img src="img/Apple.svg" width="35px">
+                        <p>App Store</p>
+                    </button>
+                </form>
+                <a class="nulp-logo" href="https://lpnu.ua/"><img src="img/Nulp_logo.svg"></a>
+            </div>
+        </section>
     </main>
 
     <footer>
-        <!-- logo -->
+        <div class="content">
+            <div class="logo"><a href="#header">myHome</a></div>
+            <nav>
+                <ul class="horizontal">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#screens">Screens</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                    </ul>
+            </nav>
 
-        <!-- links -->
+            <div class="icons">
+                <a href="github.com"><img src="img/Github_white.svg" alt="github"></a>
+                <a href="linkedin.com"><img src="img/linkedin.svg" alt="linkedin"></a>
+                <a href="facebook.com"><img src="img/Facebook_white.svg" alt="facebook"></a>
+            </div>
+
+            <p>Developed by Yaroslav Lebid. All right reserved.</p>
+        </div>
     </footer>
 
     <script src="libs/jquery-2.1.1.js"></script>

@@ -20,8 +20,12 @@ header {
     line-height: 60px;
     color: white;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+header .logo {
     display: inline-block;
-    margin-top: 19px;
+    margin-top: 15px;
+    margin-left: 45px;
 }
 
 .logo a {
@@ -50,7 +54,7 @@ nav ul.horizontal li{
     vertical-align: middle;
 }
 
-nav {
+header nav {
     float:right;
 }
 
@@ -84,7 +88,7 @@ a:hover{
 
 #about
 {
-    margin-top: 35px;
+    margin-top: 88px;
     display: block;
     margin-left:auto;
     margin-right: auto;
@@ -270,4 +274,108 @@ main h2 {
 
 #reviews {
     margin-top: 175px;
+}
+
+#download-last {
+    margin-top: 185px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1100px;
+    min-width: 400px;
+}
+
+#download-last .content{
+    margin-top: 65px;
+    text-align: center;
+}
+
+#download-last button {
+    background: none;
+}
+
+#download-last button p{
+    color: black;
+}
+
+#download-last button:hover{
+    background-color: #2F2C2C;
+    border:none;
+}
+
+#download-last button:hover p{
+    color:white;
+}
+
+.nulp-logo {
+    display:inline-block;
+    margin-top: 55px;
+}
+
+footer {
+    margin-top:70px;
+    background-color: #4A4444;
+    color: white;
+    display: block;
+    height: 400px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+
+footer .content{
+    display: block;
+    max-width: 1100px;
+    min-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer .content .logo{
+    margin-top: 70px;
+    text-align: center;
+}
+
+footer .content nav {
+    margin-top: 40px;
+    text-align: center;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+footer .content li a{
+    color: white;
+    letter-spacing: 0.105em;
+    font-style: normal;
+    font-weight: normal;
+}
+
+footer .content .icons {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+footer .content .icons a {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+footer .content .icons a img{
+    filter: drop-shadow( 4px 6px 4px #000000);
+}
+
+footer .content .icons a:hover img{
+    filter: drop-shadow( 4px 6px 4px #F03838);
+}
+
+footer .content p {
+    text-align: center;
+    margin-top: 60px;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 300;
+    color: white;
 }
