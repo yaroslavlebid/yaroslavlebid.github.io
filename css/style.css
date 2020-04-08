@@ -6,11 +6,21 @@ body {
     font-family: "Open Sans";
 }
 
+@media screen and (mix-width: 1000px)
+{
+    body{
+        background-size: auto 730px;
+        /* min-width: 320px; */
+    }
+}
+
+
 header {
     display: block;
     margin-left:auto;
     margin-right: auto;
     max-width: 1440px;
+    /* min-width: 320px; */
 }
 .logo {
     font-family: Courgette;
@@ -24,8 +34,15 @@ header {
 
 header .logo {
     display: inline-block;
-    margin-top: 15px;
-    margin-left: 45px;
+}
+
+@media screen and (min-width: 1000px)
+{
+    header .logo {
+        display: inline-block;
+        margin-top: 15px;
+        margin-left: 45px;
+    }
 }
 
 .logo a {
@@ -77,6 +94,22 @@ header nav {
     height: 40px;
 }
 
+@media screen and (max-width: 1000px)
+{
+    .rectangle{
+        display: none;
+    }
+
+    .line {
+        display: none;
+    }
+
+    nav {
+        display: none;
+    }
+    
+}
+
 a {
     text-decoration-line: none;
     color: black;
@@ -91,9 +124,22 @@ a:hover{
     margin-top: 88px;
     display: block;
     margin-left:auto;
-    margin-right: auto;
+    margin-right:auto;
     max-width: 1100px;
-    min-width: 1000px;
+    /* min-width: 320px; */
+}
+
+@media screen and (max-width: 1000px)
+{
+    #about {
+        margin-top: 20px;
+        display: block;
+        margin-left:auto;
+        margin-right:auto;
+        max-width: 1100px;
+        /* min-width: 320px; */
+        min-height: 600px;
+    }
 }
 
 #about .hand
@@ -103,12 +149,67 @@ a:hover{
     display: inline-block;
 }
 
+#about .mobile-background{
+    display:none;
+}
+
+@media screen and (max-width: 1000px)
+{
+    #about img.hand{
+        display: none;
+    }
+
+    #about .mobile-background {
+        display: block;
+        position: absolute;
+        width: 258px;
+        height: 475px;
+        top:50%;
+        left:50%;
+        transform: translate(-50.5%,-39.3%);
+        z-index: -1;
+    }
+}
+
 #about .banner-description {
     margin-left: 0px;
     margin-right: 150px;
     margin-top: 30px;
     display: block;
     float: right;
+    max-width: 440px;
+}
+
+@media screen and (max-width:1000px)
+{
+    #about .banner-description {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 50px;
+        float: none;
+        max-width: 600px;
+        text-align: center;
+    }
+
+    #about .banner-description p {
+        background-color: white;
+        border-radius: 20px;
+        padding: 5px;
+    }
+
+    #about .banner-description h3 {
+        background-color: white;
+        border-radius: 20px;
+        line-height: 35px;
+        font-size: 20px;
+        display: inline-block;
+        padding: 10px;
+    }
+
+    #about .banner-description button p{
+        background: none;
+    }
 }
 
 h3{
@@ -133,7 +234,6 @@ button {
     width: 190px;
     height: 65px;
     display: inline-block;
-    vertical-align: center;
     border: 3px solid #2F2C2C;
     border-radius: 18px;
     padding: 0px;
@@ -155,10 +255,7 @@ button p{
     line-height: 33px;
     margin-left: 10px;
     letter-spacing: 0.105em;
-
     /* animation */
-   
-
 }
 
 button img {
@@ -184,6 +281,21 @@ button.android{
     color: white;
 }
 
+@media screen and (max-width: 1000px)
+{
+    button.android{
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width: 450px)
+{
+    button.android{
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+}
+
 button:hover {
     cursor: pointer;
 }
@@ -206,7 +318,7 @@ button.apple:hover{
     margin-left:auto;
     margin-right: auto;
     max-width: 1100px;
-    min-width: 400px;
+    /* min-width: 320px; */
     text-align: center;
 }
 
@@ -281,7 +393,7 @@ main h2 {
     margin-left: auto;
     margin-right: auto;
     max-width: 1100px;
-    min-width: 400px;
+    /* min-width: 320px; */
 }
 
 #download-last .content{
@@ -325,7 +437,7 @@ footer {
 footer .content{
     display: block;
     max-width: 1100px;
-    min-width: 400px;
+    /* min-width: 400px; */
     margin-left: auto;
     margin-right: auto;
 }
