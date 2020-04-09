@@ -14,12 +14,14 @@
     <!-- <link rel="stylesheet" href="css/materialize.css"> -->
     <link rel="stylesheet" href="css/carousele.css">
     <link rel="stylesheet" href="css/hamburger-icon.css" </head>
+    <link rel="stylesheet" href="css/animate.css">
 
 <body>
 
     <header id="header">
-        <div class="logo"><a href="#header">myHome</a></div>
-        <div class="hamburger">
+
+        <div class="logo wow bounceInDown"><a href="#header">myHome</a></div>
+        <div class="hamburger wow bounceInDown">
             <a href="javascript:void(0);" onclick="hamburger()">
                 <!-- Link -->
                 <div id="menuToggle">
@@ -30,7 +32,7 @@
                 </div>
             </a>
         </div>
-        <nav id="myLinks">
+        <nav id="myLinks" class="animated bounceInDown">
             <a class="link" href="#about">About</a>
             <a class="link" href="#features">Features</a>
             <a class="link" href="#screens">Screens</a>
@@ -41,10 +43,11 @@
                 <a href="#"><img src="/img/facebook.svg" width="35px" alt="fb"></a>
             </div>
         </nav>
+
     </header>
 
     <main>
-        <section id="about">
+        <section id="about" class="animated bounceInUp">
             <img class="mobile-background" src="img/mobile_background.png">
             <img class="hand" src="img/handnew.png" width=380px alt="application">
             <div class="banner-description">
@@ -64,7 +67,7 @@
             </div>
         </section>
 
-        <section id="features">
+        <section id="features" class="wow fadeIn">
             <h1>How it works?</h1>
             <h2>features</h2>
             <div class="feature first">
@@ -88,7 +91,7 @@
 
         </section>
 
-        <section id="screens">
+        <section id="screens" class="wow fadeIn" data-wow-duration="2s">
             <h1>See examples</h1>
             <h2>screenshots</h2>
             <!-- <img src="img/phone.png" class="mobile"> -->
@@ -127,7 +130,7 @@
             </div>
         </section>
 
-        <section id="reviews">
+        <section id="reviews" class="wow fadeIn" data-wow-duration="1.5s">
             <h1>Reviews</h1>
             <h2>what users think</h2>
 
@@ -154,22 +157,22 @@
             </div>
         </section>
 
-        <section id="download-last">
+        <section id="download-last" class="wow fadeIn" data-wow-duration="1.5s">
             <h1>Download now</h1>
             <h2>myHome application</h2>
 
             <div class="content">
                 <form>
-                    <button type="button" class="android" onClick='location.href="http://google.com";'>
+                    <button type="button" class="android wow bounceInLeft" onClick='location.href="http://google.com";'>
                         <img src="img/Androidwhite.svg" width="35px">
                         <p>Google Play</p>
                     </button>
-                    <button type="button" class="apple" onClick="location.href=' http://apple.com';">
+                    <button type="button" class="apple wow bounceInRight" onClick="location.href=' http://apple.com';">
                         <img src="img/Apple.svg" width="35px">
                         <p>App Store</p>
                     </button>
                 </form>
-                <a class="nulp-logo" href="https://lpnu.ua/"><img src="img/Nulp_logo.svg"></a>
+                <a class="nulp-logo wow rollIn" href="https://lpnu.ua/"><img src="img/Nulp_logo.svg"></a>
             </div>
         </section>
     </main>
@@ -178,10 +181,10 @@
         <div class="content">
             <div class="logo"><a href="#header">myHome</a></div>
             <nav>
-                    <a href="#about">About</a>
-                    <a href="#features">Features</a>
-                    <a href="#screens">Screens</a>
-                    <a href="#reviews">Reviews</a>
+                <a href="#about">About</a>
+                <a href="#features">Features</a>
+                <a href="#screens">Screens</a>
+                <a href="#reviews">Reviews</a>
             </nav>
 
             <div class="icons">
@@ -198,6 +201,7 @@
     <script src="libs/jquery.flexslider-min.js"></script>
     <script src="js/review-slider.js"></script>
     <script src="libs/materialize.js"></script>
+    <script src="js/wow.js"></script>
     <script type="text/javascript">
         // jQuery
         document.addEventListener('DOMContentLoaded', function () {
@@ -219,6 +223,16 @@
                 }
             }
         }
+    </script>
+
+    <script>
+        var wow = new WOW(
+            {
+
+                mobile: false,
+
+            });
+        wow.init();
     </script>
 </body>
 
