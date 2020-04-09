@@ -13,31 +13,40 @@
     <link rel="stylesheet" href="css/slider-review.css">
     <!-- <link rel="stylesheet" href="css/materialize.css"> -->
     <link rel="stylesheet" href="css/carousele.css">
-</head>
+    <link rel="stylesheet" href="css/hamburger-icon.css" </head>
 
 <body>
 
     <header id="header">
         <div class="logo"><a href="#header">myHome</a></div>
-        <nav>
-            <ul class="horizontal">
-                <li><a href="#about">About</a></li>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#screens">Screens</a></li>
-                <li><a href="#reviews">Reviews</a></li>
-                <div class="rectangle">
-                    <li><a href="#"><img src="/img/twitter.svg" width="35px" alt="twitter"></a></li>
-                    <span class="line"></span>
-                    <li><a href="#"><img src="/img/facebook.svg" width="35px" alt="fb"></a></li>
+        <div class="hamburger">
+            <a href="javascript:void(0);" onclick="hamburger()">
+                <!-- Link -->
+                <div id="menuToggle">
+                    <input type="checkbox" />
+                    <span id="span1"></span>
+                    <span id="span2"></span>
+                    <span id="span3"></span>
                 </div>
-            </ul>
+            </a>
+        </div>
+        <nav id="myLinks">
+            <a class="link" href="#about">About</a>
+            <a class="link" href="#features">Features</a>
+            <a class="link" href="#screens">Screens</a>
+            <a class="link" href="#reviews">Reviews</a>
+            <div class="rectangle">
+                <a href="#"><img src="/img/twitter.svg" width="35px" alt="twitter"></a>
+                <span class="line"></span>
+                <a href="#"><img src="/img/facebook.svg" width="35px" alt="fb"></a>
+            </div>
         </nav>
     </header>
 
     <main>
         <section id="about">
             <img class="mobile-background" src="img/mobile_background.png">
-            <img class="hand" src="img/hand.png" width=380px alt="application">
+            <img class="hand" src="img/handnew.png" width=380px alt="application">
             <div class="banner-description">
                 <h3>The best application</h3>
                 <p>We present to your attention its new app that opens up new way to booking. You can download it
@@ -169,12 +178,10 @@
         <div class="content">
             <div class="logo"><a href="#header">myHome</a></div>
             <nav>
-                <ul class="horizontal">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#features">Features</a></li>
-                    <li><a href="#screens">Screens</a></li>
-                    <li><a href="#reviews">Reviews</a></li>
-                    </ul>
+                    <a href="#about">About</a>
+                    <a href="#features">Features</a>
+                    <a href="#screens">Screens</a>
+                    <a href="#reviews">Reviews</a>
             </nav>
 
             <div class="icons">
@@ -197,6 +204,21 @@
             var elems = document.querySelectorAll('.carousel');
             var instances = M.Carousel.init(elems);
         });
+    </script>
+
+    <script>
+        function hamburger() {
+            var x = document.getElementById("myLinks");
+            var links = document.getElementsByClassName("link");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+                for (var i = 0; i < links.length; i++) {
+                    links[i].style.display = "block";
+                }
+            }
+        }
     </script>
 </body>
 

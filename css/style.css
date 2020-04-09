@@ -6,7 +6,7 @@ body {
     font-family: "Open Sans";
 }
 
-@media screen and (mix-width: 1000px)
+@media screen and (max-width: 1000px)
 {
     body{
         background-size: auto 730px;
@@ -53,12 +53,14 @@ header .logo {
     text-decoration-line: none;
 }
 
-nav ul.horizontal{
+header nav {
+    display: block;
+    float: right;
     margin-top: 10px;
     padding: 4px;
 }
 
-nav ul.horizontal li{
+nav a{
     display: inline-block;
     margin-left: 10px;
     margin-right: 10px;
@@ -71,8 +73,42 @@ nav ul.horizontal li{
     vertical-align: middle;
 }
 
-header nav {
-    float:right;
+
+.hamburger{
+    display: none;
+}
+
+@media screen and (max-width: 1000px)
+{
+    header nav {
+        display: none;
+        border-radius: 20px;
+        background: white;
+        position: relative;
+        margin-left: 1000px;
+        box-shadow: 5px 10px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    header nav a {
+        display: inline-block;
+    }
+
+    .hamburger
+    {
+        display: block;
+        float: right;
+    }
+}
+
+@media screen and (min-width: 1000px)
+{
+    nav {
+        display: block!important;
+    }
+
+    nav a {
+        display: inline-block!important;
+    }
 }
 
 .rectangle {
@@ -103,11 +139,6 @@ header nav {
     .line {
         display: none;
     }
-
-    nav {
-        display: none;
-    }
-    
 }
 
 a {
@@ -171,6 +202,42 @@ a:hover{
     }
 }
 
+
+@media screen and (min-height: 320px)
+{
+    #about .mobile-background {
+        top: 80%;
+    }
+}
+
+@media screen and (min-height: 450px)
+{
+    #about .mobile-background {
+        top: 60%;
+    }
+}
+
+@media screen and (min-height: 600px)
+{
+    #about .mobile-background {
+        top: 50%;
+    }
+}
+
+@media screen and (min-height: 750px)
+{
+    #about .mobile-background {
+        top: 40%;
+    }
+}
+
+@media screen and (min-height: 900px)
+{
+    #about .mobile-background {
+        top: 35%;
+    }
+}
+
 #about .banner-description {
     margin-left: 0px;
     margin-right: 150px;
@@ -178,6 +245,12 @@ a:hover{
     display: block;
     float: right;
     max-width: 440px;
+}
+
+.back-white-b{
+    display: block;
+    background: white;
+    border-radius: 30px;
 }
 
 @media screen and (max-width:1000px)
@@ -196,6 +269,7 @@ a:hover{
         background-color: white;
         border-radius: 20px;
         padding: 5px;
+        box-shadow: 5px 10px 4px rgba(0, 0, 0, 0.25);
     }
 
     #about .banner-description h3 {
@@ -205,10 +279,12 @@ a:hover{
         font-size: 20px;
         display: inline-block;
         padding: 10px;
+        box-shadow: 5px 10px 4px rgba(0, 0, 0, 0.25);
     }
 
     #about .banner-description button p{
         background: none;
+        box-shadow: none;
     }
 }
 
@@ -291,8 +367,16 @@ button.android{
 @media screen and (max-width: 450px)
 {
     button.android{
-        margin-right: 0px;
-        margin-bottom: 20px;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    button.apple{
+        margin-top: 20px;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
     }
 }
 
@@ -347,7 +431,7 @@ main h2 {
     margin-top: 60px;
     display: inline-block;
     vertical-align: middle;
-    width: 275px;
+    max-width: 275px;
     height: 355px;
     padding: 25px;
     box-shadow: 10px 15px 70px rgba(0, 0, 0, 0.25);
@@ -357,6 +441,30 @@ main h2 {
     margin-right: 40px;
     margin-left: 40px;
 }
+
+@media screen and (max-width: 1050px)
+ {
+    #features .feature.second {
+        margin-right: 0px;
+    }
+ }
+
+ @media screen and (max-width: 700px)
+ {
+     #features .feature
+     {
+         display: block;
+         max-width: 275px;
+         height: auto;
+         margin-left: auto;
+         margin-right: auto;
+     }
+
+     #features .feature.second{
+         margin-left: auto;
+         margin-right: auto;
+     }
+ }
 
 .feature h5 {
     letter-spacing: 0.09em;
@@ -428,7 +536,7 @@ footer {
     background-color: #4A4444;
     color: white;
     display: block;
-    height: 400px;
+    min-height: 400px;
     left: 0;
     position: absolute;
     width: 100%;
@@ -455,7 +563,7 @@ footer .content nav {
     margin-left: auto;
 }
 
-footer .content li a{
+footer .content nav a{
     color: white;
     letter-spacing: 0.105em;
     font-style: normal;
@@ -484,6 +592,8 @@ footer .content .icons a:hover img{
 }
 
 footer .content p {
+    display: block;
+    float: inline-end;
     text-align: center;
     margin-top: 60px;
     font-size: 10px;
