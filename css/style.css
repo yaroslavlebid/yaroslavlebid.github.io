@@ -331,11 +331,11 @@ p {
     letter-spacing: 0.09em;
     
 }
-
+/* 
 #about p, #about h3
 {
     text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-}
+} */
 
 button {
     background: none;
