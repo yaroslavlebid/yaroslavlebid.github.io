@@ -51,6 +51,7 @@ header .logo {
 }
 .logo a:hover{
     text-decoration-line: none;
+    text-shadow: 5px 5px 20px rgba(255, 255, 255, 0.6);
 }
 
 header nav {
@@ -73,8 +74,11 @@ nav a{
     vertical-align: middle;
 }
 
+nav a:hover{
+    text-shadow: 4px 6px 10px rgba(0, 0, 0, 0.6);
+}
 
-.hamburger{
+.hamburger {
     display: none;
 }
 
@@ -87,10 +91,12 @@ nav a{
         position: relative;
         margin-left: 1000px;
         box-shadow: 5px 10px 4px rgba(0, 0, 0, 0.25);
+        z-index:1000;
     }
 
     header nav a {
         display: inline-block;
+        text-align: center;
     }
 
     .hamburger
@@ -106,9 +112,17 @@ nav a{
         display: block!important;
     }
 
+    a.fb-mobile, a.tw-mobile {
+        display: none!important;
+    }
+
     nav a {
         display: inline-block!important;
     }
+}
+
+.tw:hover, .fb:hover {
+    filter: drop-shadow( 4px 6px 10px #000000);
 }
 
 .rectangle {
@@ -130,9 +144,20 @@ nav a{
     height: 40px;
 }
 
+a.fb-mobile, a.tw-mobile {
+    display: none;
+    max-width: 40px;
+    margin-right: auto;
+    margin-left:auto;
+}
+
+a.tw-mobile{
+    margin-top:5px;
+}
+
 @media screen and (max-width: 1000px)
 {
-    .rectangle{
+    .rectangle {
         display: none;
     }
 
@@ -295,6 +320,7 @@ h3{
     line-height: 49px;
     letter-spacing: 0.09em;
     color: black;
+    
 }
 
 p {
@@ -303,6 +329,12 @@ p {
     font-size: 18px;
     line-height: 33px;
     letter-spacing: 0.09em;
+    
+}
+
+#about p, #about h3
+{
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 button {

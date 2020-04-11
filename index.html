@@ -9,12 +9,15 @@
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/slider-review.css">
     <!-- <link rel="stylesheet" href="css/materialize.css"> -->
     <link rel="stylesheet" href="css/carousele.css">
     <link rel="stylesheet" href="css/hamburger-icon.css" </head>
     <link rel="stylesheet" href="css/animate.css">
+    <script src="js/read-json.js"></script>
+
 
 <body>
 
@@ -32,22 +35,24 @@
                 </div>
             </a>
         </div>
-        <nav id="myLinks" class="animated bounceInDown">
+        <nav id="myLinks" class="wow bounceInDown">
             <a class="link" href="#about">About</a>
             <a class="link" href="#features">Features</a>
             <a class="link" href="#screens">Screens</a>
             <a class="link" href="#reviews">Reviews</a>
             <div class="rectangle">
-                <a href="#"><img src="/img/twitter.svg" width="35px" alt="twitter"></a>
+                <a href="#"><img class="tw" src="/img/twitter.svg" width="35px" alt="twitter"></a>
                 <span class="line"></span>
-                <a href="#"><img src="/img/facebook.svg" width="35px" alt="fb"></a>
+                <a href="#"><img class="fb" src="/img/facebook.svg" width="35px" alt="fb"></a>
             </div>
+            <a class="tw-mobile link" href="twitter.com"><img src="/img/twitter.svg" width="35px" alt="twitter"></a>
+            <a class="fb-mobile link" href="facebook.com"><img src="/img/facebook.svg" width="35px" alt="fb"></a>
         </nav>
 
     </header>
 
     <main>
-        <section id="about" class="animated bounceInUp">
+        <section id="about" class="wow bounceInUp">
             <img class="mobile-background" src="img/mobile_background.png">
             <img class="hand" src="img/handnew.png" width=380px alt="application">
             <div class="banner-description">
@@ -134,10 +139,10 @@
             <h1>Reviews</h1>
             <h2>what users think</h2>
 
-            <div class="review-slide">
-                <ul class="review-content">
-                    <li>
-                        <img src="img/avatar-1.svg" width="140" alt="Author image">
+            <div class="review-slide" id="reviews-content">
+                <!-- <ul class="review-content"> -->
+                <!-- <li>
+                        <img src="img/avatar-1.svg" alt="Author image">
                         <p>I think this app is perfect for all people who are at least traveling beyond their city. It
                             is very convenient in that you can book both a hotel and a room in an apartment.</p>
                         <p class="author">Yaroslav Lebid</p>
@@ -152,8 +157,8 @@
                             perfect for all people who are at least traveling beyond their city. It is very convenient
                             in that you can book both a hotel and a room in an apartment.</p>
                         <p class="author">Random Women</p>
-                    </li>
-                </ul>
+                    </li> -->
+                <!-- </ul> -->
             </div>
         </section>
 
@@ -188,14 +193,18 @@
             </nav>
 
             <div class="icons">
-                <a href="github.com"><img src="img/Github_white.svg" alt="github"></a>
-                <a href="linkedin.com"><img src="img/linkedin.svg" alt="linkedin"></a>
-                <a href="facebook.com"><img src="img/Facebook_white.svg" alt="facebook"></a>
+                <a href="https://github.com/yaroslavlebid/yaroslavlebid.github.io"><img src="img/Github_white.svg"
+                        alt="github"></a>
+                <a href="https://www.linkedin.com/in/yaroslav-lebid-lviv/"><img src="img/linkedin.svg"
+                        alt="linkedin"></a>
+                <a href="https://www.facebook.com/profile.php?id=100017294500846"><img src="img/Facebook_white.svg"
+                        alt="facebook"></a>
             </div>
 
-            <p>Developed by Yaroslav Lebid. All right reserved.</p>
+            <p>Developed by Yaroslav Lebid. All rights reserved.</p>
         </div>
     </footer>
+
 
     <script src="libs/jquery-2.1.1.js"></script>
     <script src="libs/jquery.flexslider-min.js"></script>
