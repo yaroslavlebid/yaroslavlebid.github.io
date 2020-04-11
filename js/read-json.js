@@ -23,3 +23,5 @@ function show(jsonObj) {
   ul_element.innerHTML = data;
   document.getElementById("reviews-content").appendChild(ul_element);
 }
+
+console.log('json loaded and inserted');
