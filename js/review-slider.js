@@ -1,4 +1,4 @@
-jQuery(document).ready(function($){
+jQuery(document).ready(function ($) {
 	//create the slider
 	$('.review-slide').flexslider({
 		selector: ".review-content > li",
@@ -6,7 +6,7 @@ jQuery(document).ready(function($){
 		controlNav: false,
 		slideshow: false,
 		smoothHeight: true,
-		start: function(){
+		start: function () {
 			$('.review-content').children('li').css({
 				'opacity': 1,
 				'position': 'relative'

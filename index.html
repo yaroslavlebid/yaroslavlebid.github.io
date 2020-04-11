@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>myHome Application</title>
-    <script src="js/read-json.js"></script>
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
         rel="stylesheet">
@@ -191,12 +190,40 @@
         </div>
     </footer>
 
-    <script src="libs/jquery-2.1.1.js"></script>
-    <script src="libs/jquery.flexslider-min.js"></script>
-    <script src="js/review-slider.js"></script>
-    <script src="libs/materialize.js"></script>
-    <script src="js/wow.js"></script>
-    <script src="js/anchors.js"></script>
+    <script>
+        let requestURL = 'https://raw.githubusercontent.com/yaroslavlebid/my-json-files/master/reviews.json';
+        let request = new XMLHttpRequest();
+        request.open('GET', requestURL);
+        request.responseType = 'text';
+        request.send();
+
+        request.onload = function () {
+            const reviewsText = request.response;
+            const reviews = JSON.parse(reviewsText);
+            show(reviews);
+        }
+
+        function show(jsonObj) {
+            const reviews = jsonObj['data'];
+            var data = '';
+            for (let i = 0; i < reviews.length; i++) {
+                data = data + '<li>\n' + '<div class="img-box">' + '<img src="' + reviews[i].Avatar + '" alt="Author image">\n</div>'
+                    + '<p>' + reviews[i].Text + '</p>\n' + '<p class="author">' + reviews[i].Name + '</p>\n' + '</li>';
+            }
+
+            let ul_element = document.createElement('ul');
+            ul_element.classList.add('review-content');
+            ul_element.innerHTML = data;
+            document.getElementById("reviews-content").appendChild(ul_element);
+        }
+    </script>
+    
+    <script src="libs/jquery-2.1.1.js" defer></script>
+    <script src="libs/jquery.flexslider-min.js" defer></script>
+    <script src="libs/materialize.js" defer></script>
+    <script src="js/wow.js" defer></script>
+    <script src="js/anchors.js defer" defer></script>
+    <script src="js/review-slider.js" defer></script>
     <script type="text/javascript">
         // jQuery
         document.addEventListener('DOMContentLoaded', function () {
