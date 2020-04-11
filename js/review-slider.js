@@ -14,3 +14,5 @@ jQuery(document).ready(function ($) {
 		}
 	});
 });
+
+console.log('slider script loaded and inserted');
