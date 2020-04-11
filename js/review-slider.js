@@ -15,4 +15,4 @@ jQuery(document).ready(function ($) {
 	});
 });
 
-console.log('slider script loaded and inserted');
+console.log('slider loaded and inserted');
