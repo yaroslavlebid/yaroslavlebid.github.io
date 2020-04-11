@@ -1,4 +1,4 @@
-let requestURL = 'https://raw.githubusercontent.com/yaroslavlebid/my-json-files/master/reviews.json';
+let requestURL = '/reviews.json';
 let request = new XMLHttpRequest();
 request.open('GET', requestURL);
 request.responseType = 'text';

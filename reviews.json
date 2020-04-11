@@ -1,0 +1,25 @@
+{
+	"data": [{
+		"Name": "Yaroslav Lebid",
+		"Avatar":"/img/avatar-1.svg",
+		"Text":"I think this app is perfect for all people who are at least traveling beyond their city. It is very convenient in that you can book both a hotel and a room in an apartment."
+	},
+	
+	{
+		"Name":"Will Smith",
+		"Avatar":"https://thumbor.forbes.com/thumbor/fit-in/416x416/filters%3Aformat%28jpg%29/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5b4501254bbe6f1becf1e1a5%2F0x0.jpg%3Fbackground%3D000000%26cropX1%3D0%26cropX2%3D2995%26cropY1%3D58%26cropY2%3D3055",
+		"Text":"I use this app every day. Smith achieved modest fame as a rapper under the name The Fresh Prince. In 1990, his popularity increased dramatically when he starred in the NBC television series The Fresh Prince of Bel-Air, which ran for six seasons from 1990 to 1996. After the series ended, Smith transitioned from television to film and went on to star in numerous blockbuster films. He is the only actor to have eight consecutive films gross over $100 million in the domestic box office, eleven consecutive films gross over $150 million internationally, and eight consecutive films in which he starred open at the number one spot in the domestic box office tally."
+	},
+
+	{
+		"Name":"Jim Carrey",
+		"Avatar":"https://www.onthisday.com/images/people/jim-carrey-medium.jpg",
+		"Text":"I wake up some mornings and sit and have my coffee and look out at my beautiful garden, and I go. Remember how good this, because you can lose it."
+	},
+
+	{
+		"Name":"Angelina Jolie",
+		"Avatar":"https://myurlpro.com/wp-content/uploads/2019/11/bigstock-Angelina-Jolie.jpg",
+		"Text":" American actress, filmmaker, and humanitarian. The recipient of such accolades as an Academy Award and three Golden Globe Awards, she has been named Hollywood's highest-paid actress multiple times. I wake up some mornings and sit and have my coffee and look out at my beautiful garden, and I go."
+	}]
+}
