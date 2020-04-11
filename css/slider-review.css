@@ -99,7 +99,7 @@ Main components
 
 @media screen and (max-width: 1000px)
 {
-  .review-content img{
+  .review-content .img-box{
     margin-top: 45px;
   }
 
